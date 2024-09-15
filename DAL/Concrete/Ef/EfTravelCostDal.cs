@@ -11,5 +11,8 @@ namespace DAL.Concrete.Ef
 {
     public class EfTravelCostDal : BaseRepository<TravelCost, CNBlogContext>, ITravelCostDal
     {
+        public EfTravelCostDal(CNBlogContext context) : base(context)
+        {
+        }
     }
 }

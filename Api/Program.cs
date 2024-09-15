@@ -30,6 +30,8 @@ namespace Api
                 builder.RegisterModule<AutofacBusinessModule>();
             });
 
+            builder.Services.AddSingleton<IWebHostEnvironment>(builder.Environment);
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

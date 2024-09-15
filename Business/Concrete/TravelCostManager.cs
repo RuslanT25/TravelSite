@@ -22,7 +22,7 @@ namespace Business.Concrete
             _travelCostDal = travelCostDal ?? throw new ArgumentNullException(nameof(travelCostDal));
         }
 
-        [ValidationAspect<TravelCost>(typeof(TravelCostValidator))]
+        [ValidationAspect<Entity.Concrete.TravelCost>(typeof(TravelCostValidator))]
         public IResult Add(TravelCost travelCost)
         {
             _travelCostDal.Add(travelCost);
