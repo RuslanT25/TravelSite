@@ -13,8 +13,8 @@ namespace Entity.Concrete
         public string Surname { get; set; }
         public string Description { get; set; }
 
-        public int ImageId { get; set; }
-        public Image Image { get; set; }
+        public int? ImageId { get; set; }
+        public Image? Image { get; set; }
 
         public List<Article>? Articles { get; set; }
     }

@@ -9,8 +9,8 @@ namespace Entity.Concrete
 {
     public class Fag : BaseEntity
     {
-        public int ImageId { get; set; }
-        public Image Image { get; set; }
+        public int? ImageId { get; set; }
+        public Image? Image { get; set; }
 
         public List<Question> Questions { get; set; }
     }

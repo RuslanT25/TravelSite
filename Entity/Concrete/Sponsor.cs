@@ -9,8 +9,8 @@ namespace Entity.Concrete
 {
     public class Sponsor : BaseEntity
     {
-        public int ImageId { get; set; }
-        public Image Image { get; set; }
+        public int? ImageId { get; set; }
+        public Image? Image { get; set; }
         public string Link { get; set; }
     }
 }

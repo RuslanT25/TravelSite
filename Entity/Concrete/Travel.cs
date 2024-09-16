@@ -21,8 +21,6 @@ namespace Entity.Concrete
 
         public List<Article> Articles { get; set; }
 
-        public List<SeeAndDo> SeeAndDos { get; set; }
-
         public List<TravelCost> TravelCosts { get; set; }
     }
 }

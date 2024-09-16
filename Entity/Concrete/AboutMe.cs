@@ -15,7 +15,5 @@ namespace Entity.Concrete
 
         public int ImageId { get; set; }
         public Image Image { get; set; }
-
-        public List<ReaderReview> ReaderReviews { get; set; }
     }
 }

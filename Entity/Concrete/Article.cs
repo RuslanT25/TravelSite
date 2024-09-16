@@ -10,10 +10,7 @@ namespace Entity.Concrete
     public class Article : BaseEntity
     {
         public string Title { get; set; }
-        public string Description1 { get; set; }
-        public string Quote { get; set; }
-        public string Description2 { get; set; }
-        public string Description3 { get; set; }
+        public string Description { get; set; }
 
         public List<Image> Images { get; set; }
 
