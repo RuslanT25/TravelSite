@@ -13,7 +13,7 @@ namespace DAL.Concrete.Ef
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-JVM62VU\\SQLEXPRESS;Initial Catalog=CNBlog;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder.UseSqlServer("Data Source=RUSLAN\\SQLEXPRESS;Initial Catalog=TravelTaskFinal;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
 
         }
         public DbSet<TravelCost> TravelCosts { get; set; }

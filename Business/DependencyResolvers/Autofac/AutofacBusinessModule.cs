@@ -4,8 +4,10 @@ using Business.Abstract;
 using Business.Concrete;
 using Castle.DynamicProxy;
 using Core.Helpers.Interceptors;
+using Core.Helpers.Security.JWT;
 using DAL.Abstract;
 using DAL.Concrete.Ef;
+using DataAccess.Concrete.EF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +22,12 @@ namespace Business.DependencyResolvers.Autofac
         {
             builder.RegisterType<EfTravelCostDal>().As<ITravelCostDal>().SingleInstance();
             builder.RegisterType<TravelCostManager>().As<ITravelCostService>().SingleInstance();
+
+            builder.RegisterType<AuthManager>().As<IAuthService>().SingleInstance();
+            builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
+            builder.RegisterType<EfUserDal>().As<IUserDal>().SingleInstance();
+
+            builder.RegisterType<JwtHelper>().As<ITokenHelper>().SingleInstance();
 
             builder.RegisterType<CNBlogContext>().As<CNBlogContext>().SingleInstance();
 
